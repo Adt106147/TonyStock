@@ -1,0 +1,1034 @@
+*
+  box-sizing: border-box
+  font-family: 微軟正黑體
+  // border: solid 1px #666
+  
+   // debug
+nav
+  display: block
+header
+  display: block
+section#section_ask
+  display: block
+section#section_about
+  display: block
+section#section_story
+  display: block
+section#section_future
+  display: block
+section#section_three
+  display: block
+section#section_works
+  display: block
+section#section_tools
+  display: block
+section#section_SUBSCRIBE
+  display: block
+footer
+  display: block
+
+$head_color: #f5c355
+$reason_blue: #47b8e0
+$story_blue: #34314c
+$future_pink:#ff7473
+$color_blue: #1c2938
+$color_yellow: #ffff00
+$color_light_blue: #3a516b
+$color_red: #cd3f3e
+$color_light_red: #3a516b
+$color_pink: #ff9c91
+$color_light_pink: #ffd3cf
+$color_white: #f4f6f6
+$color_light_white: #ffffff
+$color_grey: #c9c9c9
+$whitebrown: #e7d9a1
+$darkbrown: #dcc877
+
+@mixin ab_center
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%,-50%)
+  
+@mixin size($w,$h)
+  width: $w
+  height: $h
+    
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6
+  font-weight: bold
+.fa-home
+  font-size: 30px
+body
+    height:2000px
+
+
+//------navbar------//
+nav.navbar
+  transition: 0.5s //上下移動和緩上下移動和緩//
+  li
+    padding: 0px 20px
+
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top
+  background-color: transparent
+  a
+    color: #222
+    transition: 0.5s
+    &:hover
+      color: #D1964C
+    
+    
+//------navbar------// 
+header.jumbotron#home
+  position: relative
+  background-color: $head_color
+  text-align: center
+  margin-bottom: 0px
+  .iconi
+    width: 100%
+    max-width: 700px
+    padding: 250px 0px
+
+  .marginbottom
+    position: absolute
+    width: 110%
+    bottom: -500px
+    right: -20px
+    animation: upin 2s both
+    
+  @keyframes upin
+    0%
+      bottom: -300px
+    100%
+      bottom: -100px
+    
+section
+  padding: 50px 0px
+  
+
+section#section_ask
+  //是第二個區塊(投資重不重要)
+  background-color: $reason_blue
+  .col-sm-5
+    padding: 10px 50px  
+    img.question
+      width: 100%
+      height: 350px
+  h2
+    font-size: 50px
+    color: white
+    margin-top: 130px
+    padding: 0px 40px
+    text-shadow: 0.1em 0.1em 0.2em black
+
+section#section_about
+  background-color: $reason_blue
+  color: white
+  position: relative
+  h1
+    text-shadow: 0.1em 0.1em 0.2em black
+  h3
+    font-size: 30px
+    text-shadow: 0.1em 0.1em 0.2em black
+  p
+    font-size: 20px
+    text-shadow: 0.1em 0.1em 0.2em black
+  .marginbottom
+    position: absolute
+    width: 110%
+    bottom: -580px
+    right: -20px
+  .g
+    width: 100%
+  .img_wrap
+    display: flex
+    height: 220px
+    overflow: hidden
+    justify-content: center
+    align-items: center
+
+
+//投資類型//////////////////////////////////////////////////
+section#section_story
+  background-color: $story_blue
+  z-index: 4
+  padding-top: 0px
+  position: relative
+  .bottomup
+    position: absolute
+    width: 100%
+    z-index: 5
+  .bottomdown
+    position: absolute
+    width: 110%
+    z-index: 5
+    bottom: -15px
+  .col-sm-5
+    z-index: 6
+    margin-top: 80px
+    .wade
+      position: relative
+      left: 30px
+      width: 90%
+  .col-sm-7
+    text-align: center
+    z-index: 6
+    h1,h2,h3
+      color: white
+    i
+      font-size: 60px
+      color: white
+      width: 50%
+  .col-sm-12.features  
+    margin-top: 30px
+    margin-bottom: 30px
+    h5
+      color: $story_blue
+  .col-sm-12
+    .popup8
+      padding: 100px
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(0, 0, 0, 0.8)
+      display: none
+      z-index: 7
+    
+      .content8
+        background-color: $story_blue
+        padding: 20px
+        position: relative
+        height: 500px
+        display: flex
+      
+        p
+          font-size: 30px
+          overflow-y: scroll
+          color: white
+      .cancel-btn8
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        background-color: white
+        border: 2px solid #000
+        position: absolute
+        top: -50px
+        right: -50px
+        z-index: 8
+        cursor: pointer
+      .cross8
+        text-align: center
+        font-size: 40px
+        line-height: 35px
+        color: $story_blue
+      &.display
+        display: block
+    .popup9
+      padding: 100px
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(0, 0, 0, 0.8)
+      display: none
+      z-index: 7
+    
+      .content9
+        background-color: $story_blue
+        padding: 20px
+        position: relative
+        height: 500px
+        display: flex
+      
+        p
+          font-size: 30px
+          overflow-y: scroll
+          color: white
+      .cancel-btn9
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        background-color: white
+        border: 2px solid #000
+        position: absolute
+        top: -50px
+        right: -50px
+        z-index: 8
+        cursor: pointer
+      .cross9
+        text-align: center
+        font-size: 40px
+        line-height: 35px
+        color: $story_blue
+      &.display
+        display: block
+
+    .popup10
+      padding: 100px
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(0, 0, 0, 0.8)
+      display: none
+      z-index: 7
+    
+      .content10
+        background-color: $story_blue
+        padding: 20px
+        position: relative
+        height: 500px
+        display: flex
+      
+        p
+          font-size: 30px
+          overflow-y: scroll
+          color: white
+      .cancel-btn10
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        background-color: white
+        border: 2px solid #000
+        position: absolute
+        top: -50px
+        right: -50px
+        z-index: 8
+        cursor: pointer
+      .cross10
+        text-align: center
+        font-size: 40px
+        line-height: 35px
+        color: $story_blue
+      &.display
+        display: block
+    .popup11
+      padding: 100px
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(0, 0, 0, 0.8)
+      display: none
+      z-index: 7
+    
+      .content11
+        background-color: $story_blue
+        padding: 20px
+        position: relative
+        height: 500px
+        display: flex
+      
+        p
+          font-size: 30px
+          overflow-y: scroll
+          color: white
+      .cancel-btn11
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        background-color: white
+        border: 2px solid #000
+        position: absolute
+        top: -50px
+        right: -50px
+        z-index: 8
+        cursor: pointer
+      .cross11
+        text-align: center
+        font-size: 40px
+        line-height: 35px
+        color: $story_blue
+      &.display
+        display: block
+
+    .popup12
+      padding: 100px
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(0, 0, 0, 0.8)
+      display: none
+      z-index: 7
+    
+      .content12
+        background-color: $story_blue
+        padding: 20px
+        position: relative
+        height: 500px
+        display: flex
+      
+        p
+          font-size: 30px
+          overflow-y: scroll
+          color: white
+      .cancel-btn12
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        background-color: white
+        border: 2px solid #000
+        position: absolute
+        top: -50px
+        right: -50px
+        z-index: 8
+        cursor: pointer
+      .cross12
+        text-align: center
+        font-size: 40px
+        line-height: 35px
+        color: $story_blue
+      &.display
+        display: block
+        
+  .col-sm-4
+    cursor: pointer
+    text-align: center
+    margin-left: 50px
+    padding: 30px
+    h2: 45px
+    .popup-btn9
+      width: 50%
+    .popup-btn10
+      width: 50%
+    .popup-btn11
+      width: 50%
+    .popup-btn12
+      width: 50%
+    .cc
+      cursor: pointer
+      &:before      
+        content: ""
+        display: block
+        opacity: 0    
+        +ab_center
+        +size(100%,100%)
+        background-color: rgba(black,0.7)
+        z-index: 5
+        transition: 0.5s
+      .texts
+        +ab_center
+        color: white
+        z-index: 8
+        opacity: 0
+        transition: 0.5s      
+      &:hover
+        &:before,.texts
+          opacity: 1      
+  .col-sm-5
+    cursor: pointer
+    .popup-btn8
+      width: 50%
+      
+    .cc
+      cursor: pointer
+      &:before      
+        content: ""
+        display: block
+        opacity: 0    
+        +ab_center
+        +size(100%,100%)
+        background-color: rgba(black,0.7)
+        z-index: 5
+        transition: 0.5s
+      .texts
+        +ab_center
+        color: white
+        z-index: 8
+        opacity: 0
+        transition: 0.5s      
+      &:hover
+        &:before,.texts
+          opacity: 1      
+//股票是什麼////////////////////////////////////////
+section#section_future
+  background-color: $future_pink
+  .col-sm-12
+    h3
+      font-size: 40px
+
+    h1
+      color: white
+      text-shadow: 0.1em 0.1em 0.2em black
+      text-align: center
+      font-size: 50px
+
+
+    .popup
+      padding: 100px
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(0, 0, 0, 0.8)
+      display: none
+      z-index: 7
+    
+      .content
+        background-color: $story_blue
+        padding: 20px
+        position: relative
+        height: 500px
+        display: flex
+      
+        p
+          font-size: 30px
+          overflow-y: scroll
+          color: white
+      .cancel-btn
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        background-color: white
+        border: 2px solid #000
+        position: absolute
+        top: -50px
+        right: -50px
+        z-index: 8
+        cursor: pointer
+      .cross
+        text-align: center
+        font-size: 40px
+        line-height: 35px
+        color: $story_blue
+      &.display
+        display: block
+  .col-sm-6
+    color: white
+    .wade
+      margin-left: 80px
+    h3
+      text-shadow: 0.1em 0.1em 0.2em black
+    .popup-btn
+      width: 300px
+      cursor: pointer
+
+      &:hover
+        border: 2px solid #000
+        transition: 1s
+        transform: scale(0.9)
+
+  i
+    font-size: 40px
+    
+  h4
+    font-size: 50px
+    
+  p
+    font-size: 20px
+    text-shadow: 0.1em 0.1em 0.2em black
+  .col-sm-6.feature
+    padding-top: 10px
+    padding-bottom: 10px
+//股票三面向/////////////////// 
+section#section_three
+  background-color: $head_color
+  color: white
+  position: relative
+  
+  .col-sm-12
+    h1
+      color: white
+      text-shadow: 0.1em 0.1em 0.2em black
+      text-align: center
+
+
+    .popup1
+      padding: 100px
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(0, 0, 0, 0.8)
+      display: none
+      z-index: 7
+    
+      .content1
+        background-color: $story_blue
+        padding: 20px
+        position: relative
+        height: 500px
+        display: flex
+      
+        p
+          font-size: 30px
+          overflow-y: scroll
+          color: white
+      .cancel-btn1
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        background-color: white
+        border: 2px solid #000
+        position: absolute
+        top: -50px
+        right: -50px
+        z-index: 8
+        cursor: pointer
+      .cross1
+        text-align: center
+        font-size: 40px
+        line-height: 35px
+        color: $story_blue
+      &.display
+        display: block
+    .popup2
+      padding: 100px
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(0, 0, 0, 0.8)
+      display: none
+      z-index: 7
+    
+      .content2
+        background-color: $story_blue
+        padding: 20px
+        position: relative
+        height: 500px
+        display: flex
+      
+        p
+          font-size: 30px
+          overflow-y: scroll
+          color: white
+      .cancel-btn2
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        background-color: white
+        border: 2px solid #000
+        position: absolute
+        top: -50px
+        right: -50px
+        z-index: 8
+        cursor: pointer
+      .cross2
+        text-align: center
+        font-size: 40px
+        line-height: 35px
+        color: $story_blue
+      &.display
+        display: block
+
+    .popup3
+      padding: 100px
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(0, 0, 0, 0.8)
+      display: none
+      z-index: 7
+    
+      .content3
+        background-color: $story_blue
+        padding: 20px
+        position: relative
+        height: 500px
+        display: flex
+      
+        p
+          font-size: 30px
+          overflow-y: scroll
+          color: white
+      .cancel-btn3
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        background-color: white
+        border: 2px solid #000
+        position: absolute
+        top: -50px
+        right: -50px
+        z-index: 8
+        cursor: pointer
+      .cross3
+        text-align: center
+        font-size: 40px
+        line-height: 35px
+        color: $story_blue
+      &.display
+        display: block
+
+
+  .col-md-4.col-sm-6
+
+    
+    h3
+      font-size: 30px
+      text-shadow: 0.1em 0.1em 0.2em black
+    .popup-btn1
+      width: 100%
+      cursor: pointer
+      &:hover
+        border: 2px solid #000
+        transition: 1s
+        transform: scale(0.9)
+    .popup-btn2
+      width: 100%
+      cursor: pointer
+      &:hover
+        border: 2px solid #000
+        transition: 1s
+        transform: scale(0.9)
+    .popup-btn3
+      width: 100%
+      cursor: pointer
+      &:hover
+        border: 2px solid #000
+        transition: 1s
+        transform: scale(0.9)
+    .img_wrap
+      display: flex
+      height: 220px
+      overflow: hidden
+      justify-content: center
+      align-items: center
+  .threeface
+    font-size: 25px
+    text-shadow: 0.1em 0.1em 0.2em black
+    line-height: 40px
+    margin-top: 30px
+    
+//常見面向//////////////
+section#section_works
+  background-color: $story_blue
+  color: white
+  .god
+    width: 100%
+  .col-sm-12
+    h1
+      color: white
+      text-shadow: 0.1em 0.1em 0.2em black
+      text-align: center
+
+
+    .popup4
+      padding: 100px
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(0, 0, 0, 0.8)
+      display: none
+      z-index: 7
+    
+      .content4
+        background-color: $story_blue
+        padding: 20px
+        position: relative
+        height: 500px
+        display: flex
+      
+        p
+          font-size: 30px
+          overflow-y: scroll
+          color: white
+      .cancel-btn4
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        background-color: white
+        border: 2px solid #000
+        position: absolute
+        top: -50px
+        right: -50px
+        z-index: 8
+        cursor: pointer
+      .cross4
+        text-align: center
+        font-size: 40px
+        line-height: 35px
+        color: $story_blue
+      &.display
+        display: block
+    .popup5
+      padding: 100px
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(0, 0, 0, 0.8)
+      display: none
+      z-index: 7
+    
+      .content5
+        background-color: $story_blue
+        padding: 20px
+        position: relative
+        height: 500px
+        display: flex
+      
+        p
+          font-size: 30px
+          overflow-y: scroll
+          color: white
+      .cancel-btn5
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        background-color: white
+        border: 2px solid #000
+        position: absolute
+        top: -50px
+        right: -50px
+        z-index: 8
+        cursor: pointer
+      .cross5
+        text-align: center
+        font-size: 40px
+        line-height: 35px
+        color: $story_blue
+      &.display
+        display: block
+
+    .popup6
+      padding: 100px
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(0, 0, 0, 0.8)
+      display: none
+      z-index: 7
+    
+      .content6
+        background-color: $story_blue
+        padding: 20px
+        position: relative
+        height: 500px
+        display: flex
+      
+        p
+          font-size: 30px
+          overflow-y: scroll
+          color: white
+      .cancel-btn6
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        background-color: white
+        border: 2px solid #000
+        position: absolute
+        top: -50px
+        right: -50px
+        z-index: 8
+        cursor: pointer
+      .cross6
+        text-align: center
+        font-size: 40px
+        line-height: 35px
+        color: $story_blue
+      &.display
+        display: block
+    .popup7
+      padding: 100px
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(0, 0, 0, 0.8)
+      display: none
+      z-index: 7
+    
+      .content7
+        background-color: $story_blue
+        padding: 20px
+        position: relative
+        height: 500px
+        display: flex
+      
+        p
+          font-size: 30px
+          overflow-y: scroll
+          color: white
+      .cancel-btn7
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        background-color: white
+        border: 2px solid #000
+        position: absolute
+        top: -50px
+        right: -50px
+        z-index: 8
+        cursor: pointer
+      .cross7
+        text-align: center
+        font-size: 40px
+        line-height: 35px
+        color: $story_blue
+      &.display
+        display: block
+  img
+    width: 90%
+  .col-sm-5
+    
+    h2
+      font-size: 50px
+      margin-top: 230px
+      text-align: center
+    &:hover
+      transform: scale(0.9)
+      transition: 0.8s
+  .col-sm-7
+    .popup-btn4
+      width: 50%
+    .popup-btn5
+      width: 50%
+    .popup-btn6
+      width: 50%
+    .popup-btn7
+      margin-top: 30px
+      width: 50%
+    .cc
+      cursor: pointer
+      &:before      
+        content: ""
+        display: block
+        opacity: 0    
+        +ab_center
+        +size(100%,100%)
+        background-color: rgba(black,0.7)
+        z-index: 5
+        transition: 0.5s
+      .texts
+        +ab_center
+        color: white
+        z-index: 8
+        opacity: 0
+        transition: 0.5s      
+      &:hover
+        &:before,.texts
+          opacity: 1      
+//論文和選股工具/////////////////////////////
+section#section_tools
+  background-color: $reason_blue
+  color: white
+  h1
+    padding: 20px
+    font-size: 50px
+  h4
+    font-size: 35px
+  p
+    font-size: 20px
+  .good
+    text-shadow: 0.1em 0.1em 0.2em black
+  .marginbottom
+    position: absolute
+    width: 90%
+    top: 100%
+    right: -20px
+    animation: upin 2s both
+    z-index: 5
+    
+  hr
+    border-color: rgba(black,0.7)
+  .work
+    height: 230px
+    cursor: pointer
+    position: relative
+    padding: 5px
+    overflow: hidden
+    @media screen and (max-width: 700px)
+      height: 460px  
+    &.big
+      height: 460px   
+      
+    &:before      
+      content: ""
+      display: block
+      opacity: 0    
+      +ab_center
+      +size(100%,100%)
+      background-color: rgba(black,0.7)
+      z-index: 5
+      transition: 0.5s
+      
+    .texts
+      +ab_center
+      color: white
+      z-index: 8
+      opacity: 0
+      transition: 0.5s
+      
+      .title
+        line-height: 24px
+      
+    &:hover
+      &:before,.texts
+        opacity: 1
+
+.work img
+  height: 100%
+  +ab_center
+  @media screen and (max-width: 700px)
+    height: auto
+    width: 110%
+    
+///Subsrcribe////////////////////////////////////////////////
+section#section_SUBSCRIBE
+  position: relative
+  background-color: $story_blue
+  overflow: hidden
+  padding-top: 0px
+  h1
+    font-size: 50px
+  
+  
+  .bottomsubscribe
+    position: absolute
+    width: 100%
+    z-index: 5 
+  .contact
+    z-index: 6
+    color: white
+    text-shadow: 0.1em 0.1em 0.2em black
+    margin-top: 200px
+    height: 300px
+    text-align: center
+  .fab
+    color: white
+    font-size: 100px
+    margin-top: 100px
+    text-align: left
+    
+    
+
+//////////////////////////////////////////////////////////////  
+
+footer
+  position: relative
+  background-color: $whitebrown
+  text-align: center
+  padding: 0
+  
+  .icon
+    width: 150px
+    min-width: 100px
+    padding: 40px 0px
+  h5
+    padding: 10px
+
+    
+buttom.btn.btn-dark
+  color: white
+  box-shadow: (0 0 5px #03e9f4,0 0 25px #03e9f4,0 0 50px #03e9f4,0 0 100px #03e9f4)
+
+///////////////////////////////////////////////loading畫面 

@@ -1,0 +1,303 @@
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top
+  .container
+    .navbar-header
+      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand.fa.fa-home(href="#home")
+    #navbar.navbar-collapse.collapse
+      ul.nav.navbar-nav.navbar-right
+        li
+          a(href='#section_ask') 引言
+        li
+          a(href='#section_about') 投資原因
+        li
+          a(href='#section_story') 類型
+        li
+          a(href='#section_future') 股票介紹
+            span.sr-only (current)
+        li
+          a(href='#section_tools') 更多
+            span.sr-only (current)
+/////////////////////////////////////////////////////////////////////          
+header.jumbotron#home
+  .container
+    img.iconi(data-0="transform: translateY(-100px)"
+    data-500="transform: translateY(120px)",src="https://i.imgur.com/3QQoCaR.png", alt="")
+    img.marginbottom.mountain(src="https://i.imgur.com/fc8gUF5.png", alt="")
+    
+//投資理財到底重要不重要呢?/////////////////////////
+
+section#section_ask
+  .container
+    .row
+      .col-sm-5
+        img.question(src="https://i.imgur.com/glLKFjy.png", alt="" data-0="transform: translateX(-350px)" data-500="transform: translateY(0px)")
+      .col-sm-7(data-300="opacity: 0" data-500="opacity: 1")
+        h2 投資理財到底重要不重要呢?  
+///你該投資的原因///////////////////////////////////////////////////////
+
+section#section_about
+  .container
+    .row
+      .col-sm-12(data-bottom-top="transform: translateY(-50px);opacity: 0"
+      data-center="transform: translateY(0px);opacity: 1")
+        h1 重要!!你該投資的原因
+        hr
+      .col-md-4.col-sm-6(data-bottom-top="transform: translateY(-100px);opacity: 0"
+      data-center="transform: translateY(0px);opacity: 1")
+        .img_wrap
+          img.g(src="https://i.imgur.com/yCxoPUS.jpg", alt="")
+        h3 複利
+        p 「複利」與單利的區別在於，透過把每段期間獲得的利息併入本金裡，繼續累積利息，來達到利滾利、錢滾錢的效果，複利投資搭配定時定額投入，也是許多人在投資理財的時候都會採用的方式。
+      .col-md-4.col-sm-6(data-bottom-top="transform: translateY(-100px);opacity: 0"
+      data-center="transform: translateY(0px);opacity: 1")
+        .img_wrap
+          img.g(src="https://i.imgur.com/pnWvbhq.png", alt="")
+        h3 有投資 vs 無投資
+        p 以台灣平均薪資、退休年齡、平均支出，差異性是否投資。<br>假設投資年利率以5%作為計算<br>因為複利的關係，有投資的錢會越滾越多，相反則會持續消耗殆盡。
+      .col-md-4.col-sm-6(data-bottom-top="transform: translateY(-100px);opacity: 0"
+      data-center="transform: translateY(0px);opacity: 1")
+        .img_wrap
+          img.g(src="https://i.imgur.com/nT0vgh9.jpg", alt="")
+        h3 投資重要嗎?
+        p 看完上述的原因與比較後，我們可以知道投資真的很重要。越早開始學習與進行投資，對於要達到財務自由的目標是更近了一步。  
+//你適合甚麼類型///////////////////////////////////////////////////////
+section#section_story
+  img.bottomup(src="https://i.imgur.com/rqjxXo0.png", alt="")
+  img.bottomdown(src="https://i.imgur.com/KrBQGmo.png", alt="")  
+  .cotainer-fluid
+    .row
+      .col-sm-12
+        .popup8
+          .content8
+            .img.god
+              img(src='https://i.imgur.com/pLbgVEV.png' alt='')
+            p 問卷設計:<br>Q1.請問你投資最主要的目的是什麼?<br>a.保本<br>b.賺取固定的利息收入<br>c.我想賺點價差<br>d.追求最大的投資報酬率<br><br>Q2.朋友推薦你投資一個項目，初始金額只需要200元，可以期望獲得5000元的收益，請問你會怎麼做?<br>a.不用了謝謝<br>b.收益這麼高，詢問一下會不會有什麼風險呢?<br>c.問問看專業人士再做決定好了<br>d.那我可不可以一次投入兩個呢?<br><br>Q3.請問你比較偏好以下哪類風險及報酬率的投資組合呢?<br>a.絕對低風險投資組合，我只想要穩健保本<br>b.低風險承擔，低的投資報酬<br>c.中等風險承擔下，要求中等水準的合理報酬<br>d.我願意涉入高度風險，換取超額報酬<br><br>Q4.當你的整體投資組合報酬率下跌超過10%，你的生活將會受到什麼程度的影響?<br>a.我無法接受<br>b.下個月只能吃土了，影響程度大<br>c.下個月吃一點泡麵也沒什麼，影響程度中等<br>d.我那麼富，我根本沒差<br><br>Q5.假設你有NT.80萬的投資組合，請問你能接受本金的最大下跌幅度為多少?<br>a.0%<br>b.5%<br>c.10%<br>d.15%<br><br>Q6. 當你的投資到達預設的停損或停利點時，請問您會採取那種處置方式？<br>a.全部賣出，清空所有部位<br>b.大概賣掉一半，我相信還有機會反彈或再漲上去<br>c.再觀望一下<br>d.我可以等，等到回本或不再上漲為止<br><br>結果: (a選項1分，b選項2分，c選項3分，d選項4分)
+
+            
+            .cancel-btn8
+              .cross8 x
+        .popup9
+          .content9
+            .img.god
+              img(src='https://i.imgur.com/pLbgVEV.png' alt='')
+            p A. 保守型(8分以下)<br> 您是屬於保守型投資者。<br>您可能即將退休，或是偏向骰取謹慎的投資方式和喜歡存錢投資。適合的投資工具:政府債券型基金固定配息的收益型債券基金。
+
+            .cancel-btn9
+              .cross9 x
+        .popup10
+          .content10
+            .img.god
+              img(src='https://i.imgur.com/pLbgVEV.png' alt='')
+            p B.穩健型(9~13分)<br>您希望財富增值但更關注保護資金。您可能更偏向於謹慎的投資方式和存儲蓄。<br>適合的投資工具:波動較低且高殖利率的股票指數股票型基金(ETF)
+
+            .cancel-btn10
+              .cross10 x
+        .popup11
+          .content11
+            .img.god
+              img(src='https://i.imgur.com/pLbgVEV.png' alt='')
+            p 平衡型(14~18分)<br>即使您會為了隨時推移而帶來更多的回報潛力而接受一定的風險，在您也在財富增長和安全中 尋求一個平衡。<br>適合的投資工具:股票，針對基本面、獲利能力佳的公司具話題性的股票，以期短期就能獲利出場
+
+
+            .cancel-btn11
+              .cross11 x
+        .popup12
+          .content12
+            .img.god
+              img(src='https://i.imgur.com/pLbgVEV.png' alt='')
+            p 積極型(19分以上)<br>您想要增加財富，為了有機會獲得更大的長期性回報，您比較能接受市場的上下波動。您可能現在需要挑選更大報酬率的東西。<br>適合的投資工具:波動幅度較大的基金，如新興市場基金。
+
+            .cancel-btn12
+              .cross12 x           
+
+      .col-sm-5.cc.popup-btn8(data-bottom-top="transform: scale(1.5);opacity: 0" data-center="transform: scale(1);opacity: 1")
+        img.wade(src="https://i.imgur.com/yAELJvM.png", alt="")
+      .col-sm-7
+        .col-sm-12
+          h1 那你適合什麼類型的投資呢?
+          hr
+        .col-sm-12.features(data-bottom-top="transform: scale(1.5);opacity: 0" data-center="transform: scale(1);opacity: 1")
+          .row
+            .col-sm-4.cc.popup-btn9
+              i.fas.fa-shield-alt
+              h2 保守型
+            .col-sm-4.cc.popup-btn10
+              i.fas.fa-sync-alt
+              h2 穩健型
+          .row
+            .col-sm-4.cc.popup-btn11
+              i.fas.fa-balance-scale
+              h2 平衡型
+            .col-sm-4.cc.popup-btn12
+              i.fas.fa-fire-alt
+              h2 積極型
+
+        
+////////股票是什麼/////////////////////////////////////////
+section#section_future
+  .container
+    .row
+      .col-sm-12
+        .popup
+          .content
+            .img
+              img(src='https://i.imgur.com/pLbgVEV.png' alt='')
+            p 首先就來談談何謂股票？<br>股票是一種有價證券，是股份有限公司為籌集資金發給投資者做為公司資本部分所有權的憑 證 ，成為股東以此獲得股息，並分享公司成長或交易市場波動帶來的利潤；但也要共同承擔公司運作錯誤所帶來的風險。<br>假設今天A、B、C、D、E 5個人合開一家「kkk」有限公司，每人出200萬元，所以公司資本額共1,000萬元，於是這5個人就是股東，分別擁有這家公司的20%股權。假設股票發行時每股面額10元，所以「kkk」股份有限公司一共有100萬股(資本額1,000萬/每股10元)，而且一張股票就是1,000股，所以公司總共有1,000張股票(100萬股/每張股票1,000股)。於是這5個人就每一人擁有200張股票，換句話「kkk」股份有限公司的所有權被分成了1,000份，每個人各擁有200份，以後公司的資產賺錢或賠錢，甚至公司關閉後的清算，都是按照這個比例去分配，所以股票也就是擁有一家公司所有權的證明。擁有股票的人叫做股東，所以股東就是一家公司的擁有者。
+            
+            .cancel-btn
+              .cross x
+        h1 股票是什麼?
+        hr
+      .col-sm-6.wade(data-bottom-top="transform: translateY(-20px);opacity: 0" data-center="transform: translateY(0px);opacity: 1")
+        img.popup-btn.wade(src="https://i.imgur.com/aGF7v3T.png", alt="" )
+
+      .col-sm-6.feature(data-bottom-top="transform: translateY(-20px);opacity: 0" data-center="transform: translateY(0px);opacity: 1")
+        i.fa.fa-desktop
+        h3 股票簡介
+        p 在接觸理財的基礎概念以後，最重要的就是認識「股票」，它的重要性不只是投資，也是現今社會經濟最基礎的運作方式之一。
+        p 簡單來說，擁有股票就是擁有那間公司的部分所有權。並且有福同享，有難同當。賺錢時可以依照持股比例分配盈餘。也要承擔虧損風險。
+        i.far.fa-hand-lizard
+        h3 想了解更多請點手機圖示
+//股票三面向/////////
+section#section_three
+  .container
+    .row
+      .col-sm-12
+        .popup1
+          .content1
+            .img.god
+              img(src='https://i.imgur.com/pLbgVEV.png' alt='')
+            p 基本面分析:<br> （又稱基本分析）是評估資產內在價值以及分析將來可能影響價格的因素的一種方法。這種形式的分析以外部事件及影響、財務報表和行業趨勢為基礎。<br>核心概念:<br>1. 根據公司競爭力、總經、產業分析<br>2. 評估公司的獲利能力、成長性、經營風險<br>3. 了解公司的內含價值與股價的差距，來決定是否買賣內含價值，就是經過你評估後，認定的企業合理價值。<br>注意事項:<br> 這是假設在公司財報數據並未作假的前提，並且企業價值能實際反映在股價上。<br>優勢:<br>1. 背後邏輯的依據很強，讓你有信心長期持有<br>2. 不容易買貴。<br>缺點:<br>1. 即時性低，財報數據一季才公布一次，營收一個月公布一次。<br>2. 財報可能造假。<br>3. 企業價值不一定會反映在股價上。
+            
+            .cancel-btn1
+              .cross1 x
+        .popup2
+          .content2
+            .img.god
+              img(src='https://i.imgur.com/pLbgVEV.png' alt='')
+            p 技術面分析:<br>是指研究過去市場上的資訊，預測未來價格的趨勢以及決定投資的策略，也就是說技術分析主要是研究市場過去的資料來預測未來的走向。<br>這些過去的資料，就是價量走勢的圖表也就是技術分析的根本。<br>核心概念:<br>1. 根據公司股價、成交量、價格圖形去分析<br>2. 評估股價在過去歷史上的統計結果進行交易技術分析的背後，其實是 “統計學” 的結果<br>注意事項:<br>1. 技術面分析的重要假設就是歷史會重演並能反映在股價上。<br> 優點:<br>1. 反應速度快，可以第一時間進場和脫逃。<br>缺點:<br>1. 證據性薄弱，記得要適時停損。<br>2. 反應雖然快，但容易過度反應。
+            .cancel-btn2
+              .cross2 x
+        .popup3
+          .content3
+            .img.god
+              img(src='https://i.imgur.com/pLbgVEV.png' alt='')
+            p 籌碼面<br>就是在市場流通中的股票，觀察股票是誰在背後進行買賣交易，投資人可以從每日的交易成交資料中，分辨出是誰持有股票或者是融資、融券的比例，透過觀察大戶舉例有<br>1. 三大法人: 外資，自營商，投信(俗稱基金公司)<br>2. 千張持有人: 直觀來說就是持有某檔股票千張以上投資人<br>3. 內部關鍵人<br>投信買賣股票的數量，分析漲跌趨勢及買賣時機。<br>核心概念:<br>1. 根據公司法人持股、股東持股、散戶持股、買賣狀況去分析。<br>2. 跟著少數大戶、大股東操作，能提高獲利的機率。注意事項:<br>籌碼面分析的重要假設就是市場中比較有錢、持股較多的人，資訊比一般投資人更發達，跟著他們操作容易獲利。<br> 優點:<br>背後邏輯依據強，資料的準確性高。<br>缺點:<br>1. 大戶也有搞錯得時候。<br>2. 操作承受的虧損幅度通常較大。較難持續跟進。<br>3. 操作永遠會慢大戶一步，只能撈點湯喝，並且大戶永遠可以一秒間完全改變方向和看法。
+            .cancel-btn3
+              .cross3 x
+        h1 股票三分析
+        hr
+      .col-md-4.col-sm-6
+        .img_wrap
+          img.popup-btn1(data-bottom-top="transform: translateX(-80px); opacity: 0 " data-center="transform: translateX(0px); opacity: 1",src="https://i.imgur.com/FyLHeZ5.png", alt="")
+            
+        
+ 
+      .col-md-4.col-sm-6
+        .img_wrap
+          img.popup-btn2(data-bottom-top="transform: translateY(80px); opacity: 0 " data-center="transform: translateY(0px); opacity: 1",src="https://i.imgur.com/gaga9Fi.png", alt="")
+ 
+      .col-md-4.col-sm-6
+        .img_wrap
+          img.popup-btn3(data-bottom-top="transform: translateX(80px); opacity: 0 " data-center-top="transform: translateX(0px); opacity: 1",src="https://i.imgur.com/pbu5ZgV.png", alt="")
+
+      .col-sm-12
+        p.threeface 剛接觸投資，你一定常常聽到的三個單詞。分別代表了各自不同意義的分析方式，也是最主流的三大派。但不要聽到三種方式，就誤會只能選擇一種，投資並不是一道單選題，而是許許多多複合條件構成的環境。其實不只三大分類，還有像是消息面之類的分析方式。我們就先簡單介紹一下這三種吧。
+section#section_works
+  .container
+    .row
+      .col-sm-12
+        .popup4
+          .content4
+            .img.god
+              img(src='https://i.imgur.com/pLbgVEV.png' alt='')
+            p 營業利益率 (operating margin) :<br>營業利益率反應一家公司在本業獲利的能力，有些財報分析會使用毛利率這個項目，差別在於毛利率的計算並未納入營業費用的考量，營業費用包含行銷、管理、研發等非製造成本。營業利益率能更忠實反應出企業的經營績效。<br><br>股東權益報酬率(ROE) : <br>股東權益報酬率(ROE)綜合經營績效、獲利能力及財務槓桿的使用，衡量股東出資的每一塊錢能夠帶來多少的收益，其計算方式為稅後淨利/股東權益，稅後淨利為扣除利息及公司稅賦以後的淨利，為公司最後的盈餘成果。
+            
+            .cancel-btn4
+              .cross4 x
+        .popup5
+          .content5
+            .img.god
+              img(src='https://i.imgur.com/pLbgVEV.png' alt='')
+            p 董監持股比例 : <br><br>董監持股變化多少能夠反應內部人對公司的看法。<br>春江水暖鴨先知，公司的前景如何，董監事一定最先知道，如果董監事長期對該公司的持股都維持在很高的水準，那就代表董監事把自己和公司綁在一起，對公司未來的發展十分有信心，就算景氣一時滑落，也會趁機調整體質。如果董監事長期對公司的持股都不高，那代表董監事對公司長期發展並不是十分有信心，甚至有更惡劣的，則是把公司當作撈錢的工具，錢都往自己口袋放，公司不賺錢，持股比例當然不會太高。 <br><br>成交量 : <br>有人說 : 「新手看價，老手看量，高手看籌碼」，所謂的量是價的先行指標。<br>成交量不只顯示市場對於該股票的熱度，同時也能衡量股票的流動性，成交量的多寡經常是法人或大戶決定是否進出某股票的重要考量。
+            .cancel-btn5
+              .cross5 x
+        .popup6
+          .content6
+            .img.god
+              img(src='https://i.imgur.com/pLbgVEV.png' alt='')
+            p 流動比率 : <br>流動資產/流動負債，作為短期償債能力判斷的依歸。然而若僅依流動比率作為判斷依據，當流動比率過大時可能是公司有過多的現金或是存貨，尚未做到最適的營運資金管理及配置。<br><br>速動比率 : <br>(流動資產-存貨-預付費用)/流動負債，流動資產中的存貨與預付費用的流動性較差，在速動比率的分析中予以扣除，針對其中流動性較佳的資產進行分析。<br><br>(註 : 流動性指在不損失價值的前提下變現的能力。)
+            .cancel-btn6
+              .cross6 x
+        .popup7
+          .content7
+            .img.god
+              img(src='https://i.imgur.com/pLbgVEV.png' alt='')
+            p 本益比 :<br>股價/每股獲利，可理解為為了獲得多一塊錢的獲利需要付出的代價，本益比的適當與否通常會與同業體質相似的公司進行比較。<br><br>帳市值比 :<br>帳面價值/股價，作為判斷價值股或成長股的依據，根據Fama-French三因子模型，針對美國股市歷史回報率進行實證研究，試圖找出能夠解釋股票市場的平均回報率受到哪些風險溢價因素的影響，其中一個重要因子為帳市值比效應。
+            .cancel-btn7
+              .cross7 x
+      .col-sm-5.talktalk
+        h2(data-bottom-top="transform: translate(-100%,50%); " data-center="transform: translate(0%,0%);") 常用指標
+      .col-sm-7.bad(data-bottom-top="transform: translate(100%,50%); " data-center="transform: translate(0%,0%);")  
+        h2 
+        .row
+          .col-sm-6.cc.popup-btn4
+            img(src="https://i.imgur.com/CDgRK8b.png", alt="")
+            .texts
+              h4.title 面相一:  成長性
+          .col-sm-6.cc.popup-btn5
+            img(src="https://i.imgur.com/N9P8fWu.png", alt="")
+            .texts
+              h4.title 面相二:  籌碼面
+        .row
+          .col-sm-6.cc.popup-btn6
+            img(src="https://i.imgur.com/eUAyKac.png", alt="")
+            .texts
+              h4.title 面相三:  安全性
+          .col-sm-6.cc.popup-btn7
+            img(src="https://i.imgur.com/xM3EDRH.png", alt="")
+            .texts
+              h4.title 面相四:  價值
+
+///論文和選股研究工具/////////////
+section#section_tools
+  .container#app
+    .row
+      .col-sm-12
+        h1.good 更多&工具
+      .col-sm-6.work.big
+        a(href="https://docs.google.com/document/d/1BQG6mWq98ndyXylhKmt2FnYDEpgoxaoXsawBlg0tuSA/edit" target="_blank")
+          img(src="https://i.imgur.com/VceQkWr.png", alt="")
+          .texts
+            h4.title 研究方法
+            h3 <br>
+            p.content 我們這組的選股方式，透過量化的方式進行投資組合，我們的研究方法和實際的回測成效都在這裡，想了解的同學不妨點開看吧!!!!
+      .col-sm-6.work.big
+        a(href="http://127.0.0.1:8050/" target="_blank")
+          img(src="https://i.imgur.com/2Egx8XN.png", alt="")
+          .texts
+            h4.title 研究工具
+            h3 <br>
+            p.content 一個可以用來選股的儀表板，可用來回測我們研究的選股策略，方便我們在反覆測試時快速取得資料和相關數據
+
+
+//Subscribe/////////////////////////////////////////////////////
+section#section_SUBSCRIBE
+  
+  img.bottomsubscribe(src="https://i.imgur.com/rqjxXo0.png", alt="")
+  .container
+    .row
+      .col-md-6.contact
+        h1 想了解更多股票資訊嗎?<br><br><br>
+        h3 可以來我們FB粉絲團留下您的訊息<br>並告訴我們您的建議吧!!感謝
+      .col-md-6.contact
+        a.fab.fa-facebook-square(href="https://www.facebook.com/TonyStockBecomeRich")
+//////////////////////////////////////////////////////////////////////
+footer#footer
+  img.icon(src="https://i.imgur.com/X85ZxDr.png", alt="")
+  h5 台中教育大學數位內容科技系-指導老師 方覺非<br>
+    
